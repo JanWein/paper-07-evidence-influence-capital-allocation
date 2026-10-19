@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "exact_global_cases": 8,
+  "raw_state_checks": 75,
+  "derivative_checks": 36,
+  "global_method": "exact rational polynomial candidate construction, Sturm root isolation, equilibrium filtering; no optimizer or grid",
+  "audit_status_information": "receiver observes pooled positive, failed, or unchanged negative, not checked-pass flag",
+  "attribution": "R2 A/B deterrence checks supplied by central review, reproduced here; not author-origin discoveries"
+}

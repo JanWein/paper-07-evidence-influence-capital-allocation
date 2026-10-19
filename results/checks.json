@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "deterministic_policy_rows": 72,
+  "random_policy_checks": 600,
+  "valuable_random_baselines": 58,
+  "checks": "closed root versus independent bisection; individual deviations; all information sets; quadrature; regime endpoints; costly failed packets; strict policy examples; boundary implication"
+}
