@@ -1,0 +1,9 @@
+{
+  "python": "3.12.14",
+  "R3_R2_dependencies": "Python standard library only",
+  "R1_dependencies": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "PDF": "pdflatex, standard packages declared in manuscript.tex"
+}

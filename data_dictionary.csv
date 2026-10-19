@@ -1,0 +1,58 @@
+field,level,type,timing,definition,missingness_or_use
+opportunity_id,opportunity,string,before_assignment,Durable ID from opportunity census,Required includes never submitted
+parent_id,version,string,each_revision,Maps split merged and resubmitted items,Null for original items
+cohort_id,cohort,string,before_assignment,Isolated binding budget and decision window,Required
+persistent_cluster_id,cluster,string,before_assignment,Shared managers or budgets across rounds,Required for dependence accounting
+register_locked_at,cohort,datetime,before_assignment,Timestamp opportunity register frozen,Audit trail
+assignment_A,cluster,binary,assignment,Independent verification assigned,ITT variable never overwrite
+assignment_L,cluster,binary,assignment,Ex ante canonical metric governance assigned,ITT variable never overwrite
+assignment_probability,cluster,numeric,assignment,Joint verification and metric-governance arm probability,Required design weighting
+randomization_block,cluster,string,before_assignment,Site budget band and wave stratum,Required
+budget_baseline,cohort,currency,before_assignment,Predetermined capital envelope,Do not replace by realized spend
+project_description,opportunity,text,before_assignment,Scope and intended economic objective,Version controlled
+sponsor_id,opportunity,pseudonym,before_assignment,Sponsor map held separately,Restricted identity file
+sponsor_rank,person,ordinal,before_assignment,Formal organizational rank,Do not infer from treatment outcome
+committee_distance,person,numeric,before_assignment,Organizational distance to committee,Index component
+prior_access_count,person,integer,prior_year,Authorized committee interaction counts,Do not read private communication without authority
+influence_index,person,numeric,before_assignment,Equal weighted standardized available access components,Exploratory predetermined moderator not exogenous political power
+influence_missing,person,binary,before_assignment,Any unavailable influence component,Uniform component rules
+submission_flag,opportunity,binary,submission,Whether a formal proposal is submitted,Zero retained in census
+withdrawal_reason,opportunity,categorical,post_assignment,Reason for withdrawal or deferral,Not grounds for exclusion
+requested_capital,proposal,currency,submission,Requested funding and scale,Post-treatment outcome in prospective trial
+forecast_cashflows,proposal,vector,each_revision,Time-indexed cost and benefit forecast,Not realized value
+source_provenance,claim,string,submission,Document source date and reproducibility reference,Missing is substantive
+baseline_verifiability,proposal,numeric,before_assignment,Independent reproducibility rating,No ground truth claim
+metric_version,proposal,string,each_revision,Metric baseline and horizon definitions,Track tailoring and revisions
+shadow_blind_score,proposal,numeric,before_assignment,Independent shadow initial score without sponsor,Optional avoid contamination
+shadow_identified_score,proposal,numeric,before_assignment,Separate reviewer score with sponsor,Optional noisy moderator
+packet_version,proposal,string,review,Immutable treatment packet reference,Required fidelity
+source_discrepancy,claim,numeric,verification,Difference between claim and reproducible source,Post-treatment mediator
+identity_guess,reviewer_proposal,string,first_review,Reviewer guess of unit and sponsor,Leakage outcome
+first_score,reviewer_proposal,numeric,first_review,Score before context addendum,Post-treatment process outcome
+context_addendum,proposal,text,second_review,Recorded useful private context,Same opportunity across arms
+final_score,reviewer_proposal,numeric,final_review,Committee assessment after allowed context,Not objective quality
+funded,opportunity,binary,decision,Actual funding commitment,Include rejection reason
+funding_scale,opportunity,currency,decision,Committed capital at actual scale,Post-treatment mediator
+exception_reason,proposal,categorical,decision,Reason for score override including urgency,Deviation not automatic capture
+review_hours,proposal,numeric,review,Actual staff time by role,Cost account
+verification_hours,proposal,numeric,review,Verifier staff time,Cost account
+preparation_hours,proposal,numeric,submission,Submitter resource burden,Cost account prevent double counting
+unit_cost_hours,role,currency,before_assignment,Common resource valuation,Freeze cost schedule
+decision_delay,proposal,days,decision,Elapsed time from eligibility and submission,Report urgency separately
+cashflow_actual,project_period,currency,followup,Auditable incremental benefits minus implementation costs,Record failures and salvage
+baseline_cashflow,project_period,currency,before_assignment,Prespecified no-project benchmark,Measurement assumption
+valuation_kernel,period,numeric,before_assignment,Common discount or risk-pricing rule,Label limits of observable kernel
+cashflow_24m,cohort,currency,24_months,Discounted portfolio incremental realized cashflow,Primary endpoint before policy costs
+policy_cost_total,cohort,currency,24_months,Preparation review verification resources,No double count implementation cost
+net_endpoint_24m,cohort,currency,24_months,Cashflow_24m less policy costs,Primary confirmatory outcome
+terminal_lower,project,currency,24_months,Externally defensible remaining-value lower bound,Not sponsor optimism
+terminal_upper,project,currency,24_months,Externally defensible remaining-value upper bound,Report uninformative bounds
+outcome_missing_reason,project,categorical,followup,Traceability failure timing or cancellation,Do not drop project
+alternative_funding,opportunity,categorical,followup,Implementation financed outside assigned pool,Contamination baseline accounting
+metric_universe_id,proposal,string,before_quality_realization,Precommitted eligible population and canonical object,Core governance fidelity
+governance_cost_total,cohort,currency,followup,Resource cost of canonical metric enforcement,Count once
+production_cost_total,cohort,currency,followup,Required baseline information production,Count once
+recipe_amendment,proposal,text,each_revision,Documented change in denominator or reference set,Post-treatment mechanism outcome
+audit_scope,claim,categorical,before_assignment,Factual accuracy only versus relevance and denominator checks,Distinguishes interventions
+optional_visibility_assignment,cluster,binary,separate_assignment,Optional sponsor-visible versus blind first review,Separate study not core L factor
+

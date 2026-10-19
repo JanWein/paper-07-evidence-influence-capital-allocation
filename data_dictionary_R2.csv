@@ -1,0 +1,16 @@
+field,meaning,scope
+delta,"Uniform fallback halfwidth, all finite nonnegative values",synthetic
+s,Conditional bad passed-positive mass,synthetic
+M,Conditional bad metric-selection mass,synthetic
+I,Conditional bad inflation mass,synthetic
+N,Conditional bad unchanged-negative mass,synthetic
+u,Funding probability after passed positive,synthetic
+n,"Funding probability after known bad, including failure",synthetic
+posterior,Good probability after passed positive,synthetic
+packet,Unconditional probability of all submitted positive packets,synthetic
+gross,Optimal expected incremental value relative to always taking same fallback,synthetic
+prep,Real unconditional preparation cost counted once,synthetic
+W,Gross less all five resource categories,synthetic
+no_evidence,Optimized prior-based funding option B_delta(m),synthetic
+s_interval,Complete aggregate equilibrium mass interval; endpoints represented,synthetic
+regime,Equilibrium case in Theorem5,synthetic

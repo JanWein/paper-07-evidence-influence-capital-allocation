@@ -1,0 +1,13 @@
+field,meaning,provenance
+tau,Committed independent factual-audit probability,Synthetic model output
+d,Increment in funding probability over known-bad default,Synthetic model output
+y,Unique metric-only passed-bad mass,Synthetic model output
+tau_star,Minimal intensity with zero equilibrium inflation,Synthetic model output
+Q,All submitted positive probability; evaluation/audit cost base,Synthetic model output
+passed,Probability of surviving positive; posterior base,Synthetic model output
+failed,Actual checked-inflation probability,Synthetic model output
+candidate,Finite theorem candidate family,Synthetic model output
+stationary_resultant_coefficients,"Exact rational polynomial coefficients, ascending powers",Synthetic model output
+stationary_root_audit,All isolated polynomial roots with actual regime and filter result,Synthetic model output
+optimal_intervals,"Entire optimal constant intensity intervals, not a silent tie-break",Synthetic model output
+physical_checks,Raw quality/action/check/history enumeration with posterior funding,Synthetic model output
