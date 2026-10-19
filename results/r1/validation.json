@@ -1,0 +1,28 @@
+{
+  "status": "synthetic Bayesian equilibrium calculations; no firm data",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "tested_cost_points_per_policy": 2401,
+  "policies_per_distribution": 4,
+  "distributions": 3,
+  "max_equilibrium_root_error": 0.0,
+  "off_policy_bounds": [
+    -6.0,
+    6.0
+  ],
+  "parameters": {
+    "p": 0.4,
+    "v": 2.0,
+    "ell": 2.0,
+    "r": 1.0,
+    "f": 0.2,
+    "cost_support": 1.2,
+    "kappa": 0.02,
+    "e": 0.03,
+    "a": 0.04,
+    "K": 0.06
+  },
+  "policy_optimum": "full audit plus locked metric for supplied synthetic parameters",
+  "strict_receiver_equilibria": 36
+}
